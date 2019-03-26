@@ -2,10 +2,12 @@
 
 class Weakness
 {
-  public $multiplier
+  public $multiplier;
+  public $type;
 
-  public function __construct($type)
+  public function __construct($multiplier, $type)
   {
-    parent::__construct($type $this->multiplier);
+    $this->multiplier = $multiplier;
+    $this->type = $type;
   }
 }

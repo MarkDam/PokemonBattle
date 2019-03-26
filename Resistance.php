@@ -3,9 +3,11 @@
 class Resistance
 {
   public $amount;
+  public $type;
 
-  public function __construct($type)
+  public function __construct($amount, $type)
   {
-    parent::__construct($type $this->amount);
+    $this->amount = $amount;
+    $this->type = $type;
   }
 }
