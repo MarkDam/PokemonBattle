@@ -2,12 +2,12 @@
 
 class Resistance
 {
-  public $amount;
   public $type;
+  public $amount;
 
-  public function __construct($amount, $type)
+  public function __construct($type, $amount)
   {
-    $this->amount = $amount;
     $this->type = $type;
+    $this->amount = $amount;
   }
 }

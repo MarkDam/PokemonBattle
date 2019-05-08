@@ -2,12 +2,11 @@
 
 class Attack
 {
-  public $name;
-  public $strenght;
+  public $attack;
 
-  public function __construct($name, $strenght)
+  public function __construct($attack)
   {
-    $this->name = $name;
-    $this->strenght = $strenght;
+    $this->attack = $attack;
   }
+
 }

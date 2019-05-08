@@ -21,6 +21,23 @@ class Pokemon
     $this->attacks = $attacks;
   }
 
+  public function pokemonBattle($target, $attack)
+  {
+//    return var_dump($target);
+
+    if ($target->weakness->type === $this->type) {
+      $this->Attack->strenght * $target->weakness->multiplier;
+      echo "good";
+    }
+
+
+    if ($target->resistance->type === $this->type) {
+      echo "good";
+    }
+
+  }
+
+
 /*
   public function attackPokemon($targetPokemon, $attack)
   {
