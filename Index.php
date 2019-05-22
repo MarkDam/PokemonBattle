@@ -13,18 +13,17 @@ require 'Weakness.php';
 $charmeleon = new Charmeleon('Charmeel');
 
 $pikachu = new Pikachu("Ash's pikachu");
-
-// $charmeleon->attackPokemon($pickachu, $charmeleon->attacks[0]);
-
+/*
 print_r($pikachu);
 echo "<br>";
 print_r($charmeleon);
 echo "<br>";
 echo "<br>";
 echo "<br>";
-echo "Ash's pikachu valt Charmeel aan met " . $pikachu->Attack->name . " <br>";
+*/
+echo "Ash's pikachu valt Charmeel aan met " . $pikachu->GetAttackName(0) . " <br>";
 echo "Charmeel neemt ". $pikachu->pokemonBattle($charmeleon, 0)  ." damage <br>";
-echo "Charmeel heeft xx health over <br>";
-echo "Charmeel valt Ash's pikachu aan met " . $charmeleon->Attack->name . " <br>";
-echo "Ash's pikachu neemt ". $charmeleon->pokemonBattle($pikachu, 0) . "damage <br>";
-echo "Ash's pikachu heeft xx health over <br>";
+echo "Charmeel heeft " . $charmeleon->health . " health over <br>";
+echo "Charmeel valt Ash's pikachu aan met " . $charmeleon->GetAttackName(0) . " <br>";
+echo "Ash's pikachu neemt ". $charmeleon->pokemonBattle($pikachu, 0) . " damage <br>";
+echo "Ash's pikachu heeft " . $pikachu->health . " health over <br>";

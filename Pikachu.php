@@ -12,7 +12,3 @@ class Pikachu extends Pokemon
   }
 
 }
-
-//    $this->name = $name;
-//    $this->Energytype = 'Lightning';
-//    $this->hitPoints = 60;                   alles hier doet ie in de parrent::__construct
