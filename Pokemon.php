@@ -8,7 +8,7 @@ class Pokemon
   public $health;
   public $weakness;
   public $resistance;
-  private $attacks;
+  public $attacks;
 
   public function __construct($name, $type, $hitPoints, $weakness, $resistance, $attacks)
   {
@@ -23,6 +23,7 @@ class Pokemon
 
   public function pokemonBattle($target, $attack)
   {
+  //  return var_dump($target);
     $damage = $this->attacks->attack[$attack][1];
     $atkName = $this->attacks->attack[$attack][0];
 
@@ -37,6 +38,8 @@ class Pokemon
 
     $this->pokemonHealth($target, $damage);
 
+    $this->__toString();
+
     return $damage;
 
   }
@@ -46,8 +49,8 @@ class Pokemon
     $target->health -= $damage;
   }
 
-  public function GetAttackName($number)
+  public function __toString()
   {
-    return $this->attacks->attack[$number][0];
+    return $this->atkName;
   }
 }
