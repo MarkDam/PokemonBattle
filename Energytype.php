@@ -14,9 +14,3 @@ class Energytype
     $this->type = $type;
   }
 }
-
-
-/*
-const LIGHTING = 'Lightning';
-const FIRE = 'Fire';
-*/

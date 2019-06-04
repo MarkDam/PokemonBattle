@@ -23,7 +23,6 @@ class Pokemon
 
   public function pokemonBattle($target, $attack)
   {
-  //  return var_dump($target);
     $damage = $this->attacks->attack[$attack][1];
     $atkName = $this->attacks->attack[$attack][0];
 
@@ -49,8 +48,4 @@ class Pokemon
     $target->health -= $damage;
   }
 
-  public function __toString()
-  {
-    return $this->atkName;
-  }
 }
